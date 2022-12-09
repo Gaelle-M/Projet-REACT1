@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "font1";
+    src: url(../assets/fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "font2";
+    src: url(../assets/fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "font3";
+    src: url(../assets/fonts/DancingScript-Regular.ttf);
+}
+
+$font1: "font1", sans-serif;
+$font2: "font2", sans-serif;
+$font3: "font3", sans-serif;
+
+$white: rgb(245, 240, 240);
+$black: rgb(40, 39, 39);
+$grey: #494848;
+$color1: rgb(205, 132, 60);
+
+@mixin center {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    background: $grey;
+    color: $white;
+    font-family: $font1;
+  
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    font-size: 2.5rem;
+    text-decoration: underline overline $color1 4px;
+    text-shadow: 5px 1px 1px rgba(65, 64, 64, 0.92);
+    font-family: $font2;
+    letter-spacing: 2px;
+    margin: 10px 0;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 3rem;
+    }
+    @media screen and (max-width: 990px) {
+        font-size: 2.5rem;
+    }
+    @media screen and (max-width: 300px) {
+        font-size: 2.2rem;
+    }
+}
+button {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 20px 0;
+    background: $color1;
+    border: none;
+    color: $white;
+    font-family: $font2;
+    font-size: 0.8rem;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        color: $color1;
+        background: $white;
+        transform: translateX(5px);
+    }
+
+    @media screen and (max-width:625px) {
+        width: 200px;
+        height: 45px;
+    }
+    @media screen and (max-width:360px) {
+        width: 150px;
+        height: 45px;
+    }
+}

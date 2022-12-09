@@ -1,0 +1,28 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+        margin: 150px auto 50px;
+    }
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+    }
+  
+    .infos-contact {
+        margin: 20px auto;
+
+       .contactUs {
+        margin: 30px auto;
+        @include center;
+        flex-direction: column;
+        color: $color1;
+        font-size: 1.1rem;
+        
+       }
+    }
+}

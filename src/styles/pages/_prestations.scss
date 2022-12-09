@@ -1,0 +1,361 @@
+.prestations {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+        margin-top: 150px;
+
+        @media screen and (max-width: 1005px) {
+            font-size: 2.3rem;
+        }
+        @media screen and (max-width: 900px) {
+            font-size: 2.1rem;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 1.9rem;
+        }
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        margin-top: 30px;
+        @include center;
+
+        @media screen and (max-width: 769px) {
+            flex-direction: column;
+        }
+    }
+    .section1,
+    .section3,
+    .section5 {
+        @media screen and (max-width: 769px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .img1 {
+        background: url(../../assets/img/nail1.jpg) center/cover;
+        filter: drop-shadow(-5px 5px 4px rgba(205, 133, 60, 0.468));
+        border-radius: 20px;
+        width: 30%;
+        height: 350px;
+        margin: 20px;
+
+        @media screen and (max-width: 1000px) {
+            width: 40%;
+            height: 300px;
+        }
+        @media screen and (max-width: 769px) {
+            width: 45%;
+            height: 250px;
+        }
+        @media screen and (max-width: 680px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 550px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 400px) {
+            width: 70%;
+        }
+    }
+    .para1,
+    .para2,
+    .para3,
+    .para4,
+    .para5,
+    .para6 {
+        margin: auto 50px;
+        width: 70%;
+        height: 350px;
+
+        @media screen and (max-width: 910px) {
+            width: 60%;
+            margin: auto 10px;
+        }
+        @media screen and (max-width: 865px) {
+            width: 65%;
+            margin: auto 10px;
+        }
+        @media screen and (max-width: 769px) {
+            width: 100%;
+            height: 250px;
+            margin: auto 10px;
+        }
+        @media screen and (max-width: 505px) {
+            height: 300px;
+        }
+        @media screen and (max-width: 415px) {
+            height: 350px;
+        }
+        @media screen and (max-width: 370px) {
+            height: 400px;
+        }
+
+        h5 {
+            font-size: 1.4rem;
+            letter-spacing: 0.7px;
+            color: $color1;
+            margin: 10px 0;
+
+            @media screen and (max-width: 769px) {
+                margin: 10px 20px;
+                font-size: 1.2rem;
+            }
+        }
+        p {
+            margin: 20px auto;
+            text-align: justify;
+            line-height: 25px;
+            
+
+            @media screen and (max-width: 990px) {
+                font-size: 0.9rem;
+                line-height: 20px;
+                margin: 30px auto;
+            }
+            @media screen and (max-width: 840px) {
+                margin: 20px auto;
+            }
+            @media screen and (max-width: 769px) {
+                margin: 15px 20px;
+                font-size: 0.8rem;
+            }
+            @media screen and (max-width: 645px) {
+                margin: 10px 20px;
+                font-size: 0.8rem;
+            }
+            @media screen and (max-width: 480px) {
+                margin: 5px 20px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .section2 {
+        margin: 50px auto;
+
+        .img2 {
+            background: url(../../assets/img/remplissage.jpg) center/cover;
+            filter: drop-shadow(5px 5px 4px rgba(205, 133, 60, 0.468));
+            border-radius: 20px;
+            width: 30%;
+            height: 350px;
+            margin: 20px;
+
+            @media screen and (max-width: 1000px) {
+                width: 40%;
+                height: 300px;
+            }
+            @media screen and (max-width: 910px) {
+                width: 40%;
+            }
+            @media screen and (max-width: 769px) {
+                width: 45%;
+                height: 250px;
+            }
+            @media screen and (max-width: 680px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 550px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 70%;
+            }
+        }
+    }
+    .section3 {
+        margin: 50px auto;
+
+        .img3 {
+            background: url(../../assets/img/gainage.jpg) center/cover;
+            filter: drop-shadow(-5px 5px 4px rgba(205, 133, 60, 0.468));
+            border-radius: 20px;
+            width: 30%;
+            height: 350px;
+            margin: 20px;
+
+            @media screen and (max-width: 1000px) {
+                width: 40%;
+                height: 300px;
+            }
+            @media screen and (max-width: 910px) {
+                width: 40%;
+            }
+            @media screen and (max-width: 769px) {
+                width: 45%;
+                height: 250px;
+                background: url(../../assets/img/gainage.jpg) bottom/cover;
+            }
+            @media screen and (max-width: 680px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 550px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 70%;
+            }
+        }
+    }
+    .section4 {
+        margin: 50px auto;
+
+        .img4 {
+            background: url(../../assets/img/vsp3.jpg) center/cover;
+            filter: drop-shadow(5px 5px 4px rgba(205, 133, 60, 0.468));
+            border-radius: 20px;
+            width: 30%;
+            height: 350px;
+            margin: 20px;
+
+            @media screen and (max-width: 1000px) {
+                width: 40%;
+                height: 300px;
+            }
+            @media screen and (max-width: 910px) {
+                width: 40%;
+            }
+            @media screen and (max-width: 769px) {
+                width: 45%;
+                height: 250px;
+            }
+            @media screen and (max-width: 680px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 550px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 70%;
+            }
+        }
+    }
+    .section5 {
+        margin: 50px auto;
+
+        .img5 {
+            background: url(../../assets/img/nailart2.jpg) center/cover;
+            filter: drop-shadow(-5px 5px 4px rgba(205, 133, 60, 0.468));
+            border-radius: 20px;
+            width: 30%;
+            height: 350px;
+            margin: 20px;
+
+            @media screen and (max-width: 1000px) {
+                width: 40%;
+                height: 300px;
+            }
+            @media screen and (max-width: 910px) {
+                width: 40%;
+            }
+            @media screen and (max-width: 769px) {
+                width: 45%;
+                height: 250px;
+            }
+            @media screen and (max-width: 680px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 550px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 70%;
+            }
+        }
+    }
+    .section6 {
+        margin: 50px auto;
+
+        .img6 {
+            background: url(../../assets/img/depose.jpg) center/cover;
+            filter: drop-shadow(5px 5px 4px rgba(205, 133, 60, 0.468));
+            border-radius: 20px;
+            width: 30%;
+            height: 350px;
+            margin: 20px;
+
+            @media screen and (max-width: 1000px) {
+                width: 40%;
+                height: 300px;
+            }
+            @media screen and (max-width: 910px) {
+                width: 40%;
+            }
+            @media screen and (max-width: 769px) {
+                width: 45%;
+                height: 250px;
+            }
+            @media screen and (max-width: 680px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 550px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 70%;
+            }
+        }
+    }
+    .button-container {
+        @include center;
+    }
+
+    // ******* Partie du bas ******
+    .bottom-part {
+        margin: 20px 0;
+
+        h2 {
+            margin: 50px auto 10px;
+            font-size: 2rem;
+
+            @media screen and (max-width: 769px) {
+                font-size: 1.8rem;
+            }
+        }
+        p {
+            text-align: center;
+            font-style: italic;
+            letter-spacing: 0.7px;
+
+            @media screen and (max-width: 769px) {
+                font-size: .9rem;
+            }
+            @media screen and (max-width: 445px) {
+                font-size: .8rem;
+            }
+        }
+
+        .section1-bottom,
+        .section2-bottom {
+            @include center;
+            flex-direction: column;
+
+            .list1, .list2{
+                margin: 30px 20px 50px;
+                width: 100%;
+
+                p {
+                    letter-spacing: 0.6;
+                    line-height: 30px;
+                    text-align: left;
+
+                    @media screen and (max-width: 769px) {
+                        font-size: .8rem;
+                    }
+                    @media screen and (max-width: 445px) {
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+    }
+    button {
+        margin: 30px auto 40px;
+    }
+}

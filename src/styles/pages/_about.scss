@@ -1,0 +1,258 @@
+.about {
+    display: flex;
+    flex-direction: column;
+   
+    h2 {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .h2 {
+        margin-top: 150px;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        @include center;
+        margin-top: 30px;
+
+        @media screen and (max-width:880px) {
+            @include center;
+            flex-direction: column;
+        }
+    }
+    .section2, .section4 {
+        @media screen and (max-width:880px) {
+            @include center;
+            flex-direction: column-reverse;
+        }
+    }
+    
+    .img1 {
+        background: url(../../assets/img/nina.jpg) center/cover;
+        filter: drop-shadow(5px 5px 4px rgb(47, 46, 46));
+        border-radius: 10px;
+        width: 100%;
+        height: 400px;
+        margin: 10px;
+
+        @media screen and (max-width:1200px) {
+            width: 30%;
+        }
+        @media screen and (max-width:1000px) {
+            width: 50%;
+        }
+        @media screen and (max-width:905px) {
+            width: 40%;
+        }
+        @media screen and (max-width:880px) {
+            width: 50%;
+        }
+        @media screen and (max-width:769px) {
+            width: 60%;
+            height: 350px;
+        }
+        @media screen and (max-width:460px) {
+            width: 70%;
+            height: 300px;
+        }
+       
+    }
+    .para1,
+    .para2,
+    .para3,
+    .para4,
+    .para5 {
+        margin: 10px;
+        padding: 0 10px;
+        
+        @media screen and (max-width:1200px) {
+            width: 70%;
+        }
+        @media screen and (max-width:1000px) {
+            width: 50%;
+        }
+        @media screen and (max-width:905px) {
+            width: 60%; 
+        }
+        @media screen and (max-width:880px) {
+            width: 100%; 
+
+        }
+
+        h5 {
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            text-decoration: underline $color1;
+            margin: 5px 0;
+
+            @media screen and (max-width:1080px) {
+                font-size: 1.1rem;
+            }
+            @media screen and (max-width:880px) {
+                margin: 5px 15px;
+            }
+            @media screen and (max-width:769px) {
+                margin: 5px auto;
+            }
+        }
+        p {
+            font-family: $font2;
+            font-size: 0.9rem;
+            text-align: justify;
+            margin: 5px auto;
+
+            @media screen and (max-width:1080px) {
+                font-size: 0.8rem;
+            }
+            @media screen and (max-width:960px) {
+                font-size: .8rem;
+                line-height: 20px;
+                text-align: left;
+                wocfd-spacing: .8px;
+            }
+            @media screen and (max-width:880px) {
+                margin: 5px 15px;
+                text-align: justify;
+            }
+            @media screen and (max-width:769px) {
+                margin: 2px auto;
+                text-align: justify;
+            }
+            @media screen and (max-width:460px) {
+                font-size: .75rem;
+            }
+            
+        }
+    }
+    .section2 {
+        margin: 20px 0;
+
+        .img2 {
+            background: url(../../assets/img/sylvie.jpg) center/cover;
+            filter: drop-shadow(5px 5px 4px rgb(47, 46, 46));
+            border-radius: 10px;
+            width: 100%;
+            height: 350px;
+            margin: 10px;
+
+            @media screen and (max-width:1200px) {
+                width: 30%;
+            }
+            @media screen and (max-width:1000px) {
+                width: 50%;
+            }
+            @media screen and (max-width:905px) {
+                width: 40%;
+            }
+            @media screen and (max-width:880px) {
+                width: 50%;
+            }
+            @media screen and (max-width:769px) {
+                width: 55%;
+            }
+            @media screen and (max-width:460px) {
+                width: 70%;
+                height: 300px;
+            }
+        }
+    }
+    .section3 {
+        margin: 30px 0;
+
+        .img3 {
+            background: url(../../assets/img/isa.jpg) center/cover;
+            filter: drop-shadow(5px 5px 4px rgb(47, 46, 46));
+            border-radius: 10px;
+            width: 100%;
+            height: 350px;
+            margin: 10px;
+
+            @media screen and (max-width:1200px) {
+                width: 30%;
+            }
+            @media screen and (max-width:1000px) {
+                width: 50%;
+            }
+            @media screen and (max-width:905px) {
+                width: 40%;
+            }
+            @media screen and (max-width:880px) {
+                width: 50%;
+            }
+            @media screen and (max-width:769px) {
+                width: 55%;
+            }
+            @media screen and (max-width:460px) {
+                width: 70%;
+                height: 300px;
+            }
+        }
+    }
+    .section4 {
+        margin: 30px 0;
+
+        .img4 {
+            background: url(../../assets/img/laura.jpg) center/cover;
+            filter: drop-shadow(5px 5px 4px rgb(47, 46, 46));
+            border-radius: 10px;
+            width: 100%;
+            height: 350px;
+            margin: 10px;
+
+            @media screen and (max-width:1200px) {
+                width: 30%;
+            }
+            @media screen and (max-width:1000px) {
+                width: 50%;
+            }
+            @media screen and (max-width:905px) {
+                width: 40%;
+            }
+            @media screen and (max-width:880px) {
+                width: 50%;
+            }
+            @media screen and (max-width:769px) {
+                width: 55%;
+            }
+            @media screen and (max-width:460px) {
+                width: 70%;
+                height: 300px;
+            }
+        }
+    }
+    .section5 {
+        margin: 30px 0;
+
+        .img5 {
+            background: url(../../assets/img/estelle.jpg) center/cover;
+            filter: drop-shadow(5px 5px 4px rgb(47, 46, 46));
+            border-radius: 10px;
+            width: 100%;
+            height: 350px;
+            margin: 10px;
+
+            @media screen and (max-width:1200px) {
+                width: 30%;
+            }
+            @media screen and (max-width:1000px) {
+                width: 50%;
+            }
+            @media screen and (max-width:905px) {
+                width: 40%;
+            }
+            @media screen and (max-width:880px) {
+                width: 50%;
+            }
+            @media screen and (max-width:769px) {
+                width: 55%;
+            }
+            @media screen and (max-width:460px) {
+                width: 70%;
+                height: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,488 @@
+.home {
+    //Partie logo et titre
+    .header {
+        @include center;
+        flex-direction: column;
+        height: 100vh;
+
+        .logo {
+            width: 100%;
+            text-align: center;
+
+            @media screen and (max-width: 850px) {
+                margin-top: 0;
+            }
+            @media screen and (max-width: 660px) {
+                margin: 0 auto 30px;
+                height: 350px;
+            }
+            @media screen and (max-width: 390px) {
+                margin: 0 auto;
+                height: 350px;
+            }
+        }
+        img {
+            width: 30%;
+
+            @media screen and (max-width: 1025px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 1030px) {
+                width: 40%;
+            }
+            @media screen and (max-width: 660px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 625px) {
+                width: 55%;
+                margin: 0;
+                padding: 0;
+            }
+            @media screen and (max-width: 525px) {
+                width: 65%;
+                margin-top: 15px;
+                padding: 0;
+            }
+            @media screen and (max-width: 390px) {
+                width: 80%;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 225px) {
+                width: 80%;
+                margin-top: 90px;
+            }
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+
+            @media screen and (max-width: 660px) {
+                margin-top: 20px;
+            }
+
+            h1 {
+                font-family: $font3;
+                letter-spacing: 2px;
+                font-size: 2.5rem;
+                font-weight: 100;
+                margin-bottom: 10px;
+
+                @media screen and (max-width: 990px) {
+                    font-size: 2rem;
+                }
+                @media screen and (max-width: 820px) {
+                    font-size: 1.9rem;
+                }
+                @media screen and (max-width: 660px) {
+                    font-size: 1.8rem;
+                }
+                @media screen and (max-width: 525px) {
+                    font-size: 1.7rem;
+                }
+            }
+            p {
+                font-size: 1.1rem;
+                font-family: $font2;
+                font-weight: 300;
+                letter-spacing: 1px;
+                text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.947);
+
+                @media screen and (max-width: 990px) {
+                    font-size: 1rem;
+                }
+                @media screen and (max-width: 820px) {
+                    font-size: 0.8rem;
+                }
+                @media screen and (max-width: 525px) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    //Parie présentation du salon
+    .section1 {
+        @include center;
+        flex-direction: column;
+        margin: 40px 0;
+
+        .presentation {
+            @include center;
+            margin: 50px;
+
+            @media screen and (max-width: 1070px) {
+                margin: 50px 20px;
+            }
+            @media screen and (max-width: 769px) {
+                @include center;
+                flex-direction: column-reverse;
+            }
+            @media screen and (max-width: 620px) {
+                margin: auto 30px;
+            }
+
+            .left-part {
+                width: 60%;
+                @include center;
+                flex-direction: column;
+                margin: 30px auto;
+
+                @media screen and (max-width: 1000px) {
+                    width: 50%;
+                    margin: 20px 5px;
+                }
+                @media screen and (max-width: 990px) {
+                    width: 40%;
+                    margin: 20px 5px;
+                }
+                @media screen and (max-width: 900px) {
+                    width: 50%;
+                    margin: 20px 5px;
+                }
+                @media screen and (max-width: 900px) {
+                    width: 50%;
+                    margin: 20px 5px;
+                }
+                @media screen and (max-width: 769px) {
+                    width: 100%;
+                    margin: 20px 5px;
+                }
+
+                p {
+                    margin: 20px 30px;
+                    letter-spacing: 0.5px;
+                    line-height: 25px;
+                    text-align: justify;
+
+                    &:nth-child(3) {
+                        visibility: visible;
+    
+                        @media screen and (max-width:525px) {
+                            display: none;
+                        }
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 0.8rem;
+                    }
+                    @media screen and (max-width: 1000px) {
+                        margin: 10px 10px;
+                        line-height: 20px;
+                    }
+                    @media screen and (max-width: 990px) {
+                        margin: 10px 10px;
+                        line-height: 20px;
+                    }
+                    @media screen and (max-width: 810px) {
+                        margin: 8px 10px;
+                        line-height: 20px;
+                    }
+                    @media screen and (max-width: 769px) {
+                        margin: 10px 10px;
+                        line-height: 20px;
+                    }
+                    @media screen and (max-width: 430px) {
+                        margin: 5px 10px;
+                        line-height: 20px;
+                    }
+                    @media screen and (max-width: 380px) {
+                        margin: 2.5px 0;
+                        line-height: 20px;
+                        text-align: left;
+                    }
+                    @media screen and (max-width: 335px) {
+                        margin: 2.5px 0;
+                        line-height: 20px;
+                        letter-spacing: 0;
+                        text-align: left;
+                    }
+                    span {
+                        color: $color1;
+                        font-weight: 600;
+                        font-style: italic;
+                    }
+                }
+            }
+            .right-part {
+                width: 40%;
+                height: 750px;
+                margin: 0 15px;
+                background: url(../../assets/img/salon.jpeg) left/cover;
+                border-radius: 10px;
+                filter: drop-shadow(5px 5px 4px rgb(47, 46, 46));
+
+                @media screen and (max-width: 1200px) {
+                    background: url(../../assets/img/salon.jpeg) center/cover;
+                }
+                @media screen and (max-width: 1000px) {
+                    width: 50%;
+                    margin: 20px 5px;
+                }
+                @media screen and (max-width: 990px) {
+                    width: 60%;
+                    margin: 0 5px;
+                }
+                @media screen and (max-width: 900px) {
+                    width: 50%;
+                    margin: 0 5px;
+                }
+                @media screen and (max-width: 769px) {
+                    width: 100%;
+                    margin: 0 10px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    //Partie des préstations
+    .section2 {
+        @include center;
+        flex-direction: column;
+        background: $black;
+        margin-top: 50px;
+
+        h2 {
+            margin: 50px auto;
+            text-shadow: 5px 1px 1px rgb(52, 50, 50);
+
+            @media screen and (max-width:360px) {
+                font-size: 2rem;
+            }
+        }
+
+        .container-prestations {
+            width: 70%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+
+            @media screen and (max-width: 970px) {
+                width: 80%;
+            }
+            @media screen and (max-width: 890px) {
+                width: 85%;
+            }
+            @media screen and (max-width: 825px) {
+                width: 90%;
+            }
+            @media screen and (max-width: 750px) {
+                width: 95%;
+            }
+            @media screen and (max-width: 515px) {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 25%;
+                gap: 0;
+            }
+
+            .presta1,
+            .presta2,
+            .presta3,
+            .presta4 {
+                background: $grey;
+                border-radius: 10px;
+                margin: 30px;
+                text-align: center;
+                height: 150px;
+                @include center;
+                flex-direction: column;
+                cursor: pointer;
+                transition: 0.8s;
+
+                @media screen and (max-width: 650px) {
+                    width: 85%;
+                }
+                @media screen and (max-width: 515px) {
+                    margin: 20px auto;
+                }
+
+                &:hover {
+                    background: #72717199;
+                    transform: scale(0.9);
+                }
+
+                h5 {
+                    font-size: 1.3rem;
+                    letter-spacing: 2px;
+                    margin: 5px 0;
+
+                    @media screen and (max-width: 750px) {
+                        font-size: 1.1rem;
+                    }
+                }
+                p {
+                    color: $color1;
+                    font-size: 1.1rem;
+                    letter-spacing: 0.8px;
+                    margin: 10px 0;
+
+                    @media screen and (max-width: 750px) {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            @media screen and (max-width:515px) {
+                margin-top: 20px;
+            }
+            @media screen and (max-width:460px) {
+                margin: 20px 0 20px;
+            }
+        }
+        button {
+            margin: auto 80px 60px;
+
+            @media screen and (max-width: 825px) {
+                margin: auto 65px 50px;
+            }
+            @media screen and (max-width: 750px) {
+                width: 180px;
+            }
+            @media screen and (max-width: 515px) {
+                margin: 20px;
+            }
+            @media screen and (max-width: 460px) {
+                margin: 5px;
+                width: 150px;
+            }
+            @media screen and (max-width: 360px) {
+                margin: 5px;
+                width: 120px;
+            }
+            @media screen and (max-width: 270px) {
+                margin: 5px;
+                width: 100px;
+            }
+        }
+    }
+
+// Partie des réalisations
+    .section3 {
+        @include center;
+        flex-direction: column;
+        margin-top: 100px;
+
+        .image-container {
+            @include center;
+            width: 100%;
+            height: 200px;
+            margin-top: 30px;
+            background: url(../../assets/img/vsp_flou.jpg) center/cover;
+            border-radius: 10px;
+
+            @media screen and (max-width: 500px) {
+                display: none;
+            }
+
+            p {
+                width: 50%;
+                text-align: center;
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+                text-shadow: 2px 3px 2px $black;
+                font-weight: 100;
+                filter: none;
+                font-family: $font3;
+
+                @media screen and (max-width:675px) {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .container-real {
+            width: 100%;
+            margin-top: 100px;
+            @include center;
+            flex-direction: column;
+
+            @media screen and (max-width: 770px) {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+
+            .images,
+            .images2 {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+
+                @media screen and (max-width: 750px) {
+                    display: grid;
+                    grid-template-columns: 100%;
+                }
+
+                img {
+                    width: 350px;
+                    height: 350px;
+                    border-radius: 5px;
+                    margin: 30px;
+                    transition: 0.5s;
+                    filter: drop-shadow(5px 5px 4px rgb(47, 46, 46));
+
+                    @media screen and (max-width: 1190px) {
+                        width: 300px;
+                        height: 300px;
+                    }
+                    @media screen and (max-width: 1065px) {
+                        width: 250px;
+                        height: 250px;
+                        margin: 50px;
+                    }
+                    @media screen and (max-width: 965px) {
+                        width: 250px;
+                        height: 250px;
+                        margin: 35px;
+                    }
+                    @media screen and (max-width: 930px) {
+                        width: 250px;
+                        height: 250px;
+                        margin: 10px;
+                    }
+                    @media screen and (max-width: 820px) {
+                        width: 200px;
+                        height: 200px;
+                        margin: 30px;
+                    }
+                    @media screen and (max-width: 750px) {
+                        display: none;
+                    }
+        
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .images-hidden {
+            display: none;
+
+            @media screen and (max-width: 750px) {
+                @include center;
+                margin: 50px 20px auto;
+
+                img {
+                    width: 80%;
+
+                    @media screen and (max-width:500px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        button {
+            margin: 20px auto 50px;
+
+            @media screen and (max-width: 930px) {
+                width: 200px;
+                height: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.formulaire {
+    @include center;
+    flex-direction: column;
+    background: url(../../assets/img/bg-contact.jpg) center/cover;
+
+    form {
+        @include center;
+        flex-direction: column;
+        width: 90%;
+        min-width: 200px;
+        max-width: 600px;
+        margin: 10px auto;
+        border-radius: 10px;
+        background: rgba(46, 45, 45, 0.276);
+        box-shadow: -2px -2px 1px rgba(0, 0, 0, 0.34);
+        
+        .labels {
+            display: flex;
+            align-items: left;
+            width: 50%;
+        }
+        label {
+            margin: 5px 0;
+            font-family: $font2;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+        input {
+            border: 1px solid $white;
+            border-radius: 10px;
+            width: 50%;
+            height: 40px;
+            background: rgba(46, 45, 45, 0.276);
+            color: $white;
+            font-size: 1.1rem;
+            margin: 5px 0;
+
+            &:focus {
+                border: 2px solid $color1;
+            }
+        }
+        textarea {
+            background: rgba(46, 45, 45, 0.276);
+            border-radius: 10px;
+            border: 1px solid white;
+            width: 70%;
+            height: 200px;
+            color: $white;
+            padding: 0 5px;
+            font-size: 1rem;
+
+            &:focus {
+                border: 2px solid $color1;
+                padding: 0 5px;
+            }
+        }
+        input[type="submit"] {
+            margin: 30px 0;
+            width: 30%;
+            transition: 0.8s;
+
+            &:hover {
+                color: $color1;
+                border: 2px solid $color1;
+                transform: translateY(10px);
+            }
+        }
+    }
+    .success,
+    .error {
+        width: 200px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .success {
+        background: rgba(79, 247, 79, 0.852);
+        color: $black;
+    }
+    .error {
+        background: rgba(248, 49, 49, 0.963);
+        width: 400px;
+        color: $black;
+    }
+}

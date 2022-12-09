@@ -1,0 +1,29 @@
+.politique {
+    display: flex;
+    flex-direction: column;
+    font-family: $font2;
+
+    h2 {
+        margin: 150px auto 0;
+    }
+    h5 {
+        margin: 20px auto;
+    }
+
+    .section1, .section2, .section3, .section4 {
+        margin: 20px 15px;
+
+        h3 {
+            color: $color1;
+            margin-bottom: 10px;
+        }
+    }
+    .part1, .part2, .part3, .part4 {
+        margin: 15px auto;
+
+        h5 {
+            color: $color1;
+            margin: 0 auto 5px;
+        }
+    }
+}
